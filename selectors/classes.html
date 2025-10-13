@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>Selectoren: ids</title>
+  <meta charset="utf-8">
+  <style>
+    :root {
+      --blue: #003c79;
+      --darkblue: rgb(2, 2, 118);
+      --white: whitesmoke;
+      --orange: rgb(255, 123, 0);
+      --purple: rgb(135, 26, 237);
+      --brown: rgba(147, 41, 41, 0.964);
+      --black: #030000;
+      --green: rgb(132, 184, 28);
+      --pink1: rgb(246, 14, 138);
+      --pink2: hotpink;
+      --gray: rgba(128, 128, 128, 0.665);
+
+    }
+    body {
+        background-color: var(--blue);
+        color: var(--white);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .orangetxt{
+      color: var(--orange);
+    }
+
+    .blueongreen{
+      color: var(--blue);
+      background-color: var(--green);
+    }
+
+    .blueonpink{
+      color: var(--blue);
+      background-color: var(--pink1);
+    }
+
+    .orangeonpurple{
+      color: var(--orange);
+      background-color: var(--purple);
+    }
+
+    .orangeonbown{
+      color: var(--orange);
+      background-color: var(--brown);
+    }
+
+    .grayonpik{
+      color: var(--gray);
+      background-color: var(--pink2);
+    }
+
+    .uppercase{
+      text-transform: uppercase;
+    }
+
+    .italic{
+      font-style: italic;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="orangetxt">p element, los</p>
+  <section class="underline">
+    <p class="blueonpink">1e p element, in 1e section, los</p>
+    <p class="blueongreen" title="special">2e p element, in 1e section, los, met title special</p>
+    <div>
+      losse tekst in div
+      <p class="orangeonpurple">1e p element, in div in 1e section</p>
+      <p class="blueongreen">2e p element, in div in 1e section</p>
+      <p class="blueongreen" title="last">3e p element, in div in 1e section, met title last</p>
+    </div>
+    <p class="blueongreen">p element, in section (onder div)</p>
+    <ul class="orangeonbown">
+      <li class="uppercase">1e li element, in ul in 1e section</li>
+      <li>2e li element, in ul in 1e section</li>
+      <li>3e li element, in ul in 1e section</li>
+      <li title="last">4e li element, in ul in 1e section, met title last</li>
+    </ul>
+  </section>
+  losse tekst
+  <section class="underline">
+      <p class="blueongreen">1e p element, in 2e section, los</p>
+      <ol>
+        <li class="orangetxt uppercase">1e li element, in ol in 2e section</li>
+        <li class="grayonpink">2e li element, in ol in 2e section</li>
+        <li class="grayonpink">3e li element, in ol in 2e section</li>
+      </ol>
+  </section>
+  <p class="orangetxt italic" title="last">p element, onder 2e section, met title last</p>
+</body>
+</html>

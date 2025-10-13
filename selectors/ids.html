@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <title>Selectoren: ids</title>
+  <meta charset="utf-8">
+  <style>
+    :root {
+      --blue: #003c79;
+      --darkblue: rgb(2, 2, 118);
+      --white: whitesmoke;
+      --orange: rgb(255, 123, 0);
+      --purple: rgb(135, 26, 237);
+      --brown: rgba(147, 41, 41, 0.964);
+      --black: #030000;
+      --green: rgb(132, 184, 28);
+      --pink1: rgb(246, 14, 138);
+      --pink2: hotpink;
+      --gray: rgba(128, 128, 128, 0.665);
+
+    }
+    body {
+        background-color: var(--blue);
+        color: var(--white);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #p1, #p5, #p6{
+      color: var(--orange);
+      text-decoration: underline;
+    }
+
+    #p2, #p7, #p8{
+      color: var(--blue);
+      background-color: var(--green);
+      text-decoration: underline;
+    }
+
+    #p3{
+      color: var(--blue);
+      background-color: var(--pink1);
+      text-decoration: underline;
+    }
+
+    #p4{
+      color: var(--orange);
+      background-color: var(--purple);
+      text-decoration: underline;
+    }
+
+    #li1, #li2, #li3, #l4{
+      color: var(--orange);
+      background-color: var(--brown);
+      text-decoration: underline;
+    }
+
+    #li1, #li5{
+      color: var(--orange);
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    #li6, #li7{
+      color: var(--gray);
+      background-color: var(--pink2);
+      text-decoration: underline;
+    }
+
+    #p9{
+      color: var(--orange);
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+  <p id="p1">p element, los</p>
+  <section>
+    <p id="p2">1e p element, in 1e section, los</p>
+    <p id="p3" title="special">2e p element, in 1e section, los, met title special</p>
+    <div>
+      losse tekst in div
+      <p id="p4">1e p element, in div in 1e section</p>
+      <p id="p5">2e p element, in div in 1e section</p>
+      <p id="p6" title="last">3e p element, in div in 1e section, met title last</p>
+    </div>
+    <p id="p7">p element, in section (onder div)</p>
+    <ul>
+      <li id="li1">1e li element, in ul in 1e section</li>
+      <li id="li2">2e li element, in ul in 1e section</li>
+      <li id="li3">3e li element, in ul in 1e section</li>
+      <li id="li4" title="last">4e li element, in ul in 1e section, met title last</li>
+    </ul>
+  </section>
+  losse tekst
+  <section>
+      <p id="p8">1e p element, in 2e section, los</p>
+      <ol>
+        <li id="li5">1e li element, in ol in 2e section</li>
+        <li id="li6">2e li element, in ol in 2e section</li>
+        <li id="li7">3e li element, in ol in 2e section</li>
+      </ol>
+  </section>
+  <p id="p9" title="last">p element, onder 2e section, met title last</p>
+</body>
+</html>

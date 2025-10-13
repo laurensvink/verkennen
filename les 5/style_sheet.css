@@ -1,0 +1,33 @@
+h1 {
+    color: lime;
+}
+p {
+    color: blue;
+    font-weight: bold;
+}
+h2 {
+    color: orange;
+}
+:root {
+    background-color: black;
+}
+
+p+p{
+    color:yellow;
+    font-style: italic;
+}
+
+p[paragraph] {
+    color: red;
+    font-family: monospace;
+}
+body > p {
+    color: yellow;
+    background-color: red;
+    font-style: italic;
+}
+footer > p {
+    color: red;
+    font-family: monospace;
+    text-decoration: underline;
+}
