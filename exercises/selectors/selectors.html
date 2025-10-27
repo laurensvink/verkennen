@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>Selectoren: elements</title>
+  <meta charset="utf-8">
+  <style>
+       :root {
+        --blue: #003c79;
+        --darkblue: rgb(2, 2, 118);
+        --white: whitesmoke;
+        --orange: rgb(255, 123, 0);
+        --purple: rgb(135, 26, 237);
+        --brown: rgba(147, 41, 41, 0.964);
+        --black: #030000;
+        --green: rgb(132, 184, 28);
+        --pink1: rgb(246, 14, 138);
+        --pink2: hotpink;
+        --gray: rgba(128, 128, 128, 0.665);
+      }
+    body {
+        background-color: var(--blue);
+        color: var(--white);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+li, p {
+    color: var(--orange);
+}
+
+section p {
+    background-color: var(--purple);
+}
+
+section ul li {
+  background-color:var(--brown);  
+}
+
+section > p {
+    background-color: var(--green);  
+    color: var(--black);
+}
+p + p {
+    background-color: var(--pink1);
+    color: var(--darkblue);
+}
+
+ol li + li {
+    background-color: var(--pink2);
+    color: var(--gray);
+}
+
+section * {
+    text-decoration: underline;
+}
+
+ol :first-child, 
+ul :first-child{
+    text-transform: uppercase;
+}
+
+* [title="last"]{
+  font-style: italic;
+}
+  </style>
+</head>
+<body>
+  <p>p element, los</p>
+  <section>
+    <p>1e p element, in 1e section, los</p>
+    <p title="special">2e p element, in 1e section, los, met title special</p>
+    <div>
+      losse tekst in div
+      <p>1e p element, in div in 1e section</p>
+      <p>2e p element, in div in 1e section</p>
+      <p>3e p element, in div in 1e section</p>
+    </div>
+    <p>p element, in section (onder div)</p>
+    <ul>
+      <li>1e li element, in ul in 1e section</li>
+      <li>2e li element, in ul in 1e section</li>
+      <li>3e li element, in ul in 1e section</li>
+      <li>4e li element, in ul in 1e section</li>
+    </ul>
+  </section>
+  losse tekst
+  <section>
+      <p>1e p element, in 2e section, los</p>
+      <ol>
+        <li>1e li element, in ol in 2e section</li>
+        <li>2e li element, in ol in 2e section</li>
+        <li>3e li element, in ol in 2e section</li>
+      </ol>
+  </section>
+  <p title="last">p element, onder 2e section, met title last</p>
+</body>
+</html>
