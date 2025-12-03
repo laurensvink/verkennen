@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koekjesmachine</title>
+</head>
+<body>
+    <button onclick="koekjes()">Bestel!</button>
+    <p id="weergevenkoekjes"></p>
+    <p id="emoji"></p>
+
+    <script> 
+        function koekjes() {
+            let aantal_koekjes = prompt('hoeveel koekjes wil je?')
+            document.getElementById("weergevenkoekjes").innerText = "Je hebt " + aantal_koekjes + " koekjes besteld!"
+            let koek = "🍪".repeat(aantal_koekjes)
+            document.getElementById("emoji").innerText = koek
+        }
+    </script>
+</body>
+</html>
